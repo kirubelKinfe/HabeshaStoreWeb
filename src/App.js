@@ -1,19 +1,30 @@
-import Banner from "./components/Banner/Banner";
-import Featured from "./components/Featured/Featured";
-import Navbar from "./components/Navbar/Navbar";
-
-
 import './App.css'
-import Products from "./components/Products/Products";
-import Categories from "./components/Categories/Categories";
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import Home from './container/Home';
+import Login from './container/Login';
+import { Navbar } from './components';
+import Children from './container/Children';
+import Women from './container/Women';
+import Men from './container/Men';
+import { ToastContainer } from 'react-toastify';
+import Checkout from './container/Checkout';
+
 function App() {
+  
   return (
     <div>
-      <Navbar />
-      <Banner />
-      <Featured />
-      <Products />
-      <Categories />
+      <Router>
+        <ToastContainer />
+          <Navbar />
+          <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='/login' element={<Login />} />
+            <Route path='/men' element={<Men />} />
+            <Route path='/women' element={<Women />} />
+            <Route path='/children' element={<Children />} />
+            <Route path='/checkout' element={<Checkout />} />
+          </Routes>
+      </Router>
     </div>
   );
 }

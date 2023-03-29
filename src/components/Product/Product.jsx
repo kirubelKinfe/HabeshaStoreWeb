@@ -1,22 +1,42 @@
-import { images } from '../../constants'
+import './Product.css'
+import { useDispatch, useSelector } from "react-redux"
+import { addToCart, selectItems } from "../../features/cartSlice";
 
 
-const Product = () => {
+const Product = ({ 
+    product:{id,productName, productPrice, img, quantity} 
+  }) => {
+  
+  const dispatch = useDispatch();
+  const cartItems = useSelector(selectItems)
+ 
+
+  const addToCartFun = () => {
+    dispatch(
+      addToCart({
+        id: id,
+        name: productName,
+        price: productPrice,
+        img: img,
+        quantity: quantity
+      })
+    )
+  }
+
+
   return (
-    <div>
-      <div className='product-item'>
-          <div className='product-img'>
-            <img className='thumbnail' src={images.ProductImage} alt="product" />
+    <div className='productItem'>
+        {/* <div className='productQuantity'>{quantity}</div> */}
+        <div className='productImg'>
+          <img src={img} alt="product" />
+        </div>
+        <div className='productInfo'>
+          <div>
+            <div className='productDescription'>{productName}</div>
+            <div className='productPrice'>Br<span>{productPrice}</span> </div>
           </div>
-          <div className='product-info'>
-            <div className='product-info-desc'>
-              <div className='product-description'>T-shirt</div>
-              <div className='product-price'>Br<span>2000</span> </div>
-            </div>
-            <button className='cart-button'>Add to cart</button>
-            
-          </div>
-      </div>
+          <button  className='cartButton' type='button' onClick={addToCartFun}>Add to cart</button>
+        </div>
     </div>
   )
 }

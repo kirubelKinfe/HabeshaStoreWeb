@@ -1,64 +1,72 @@
-.banner {
-    position: relative;
-    overflow: hidden;
-    height: 90vh;
-    width: 100%;
-    background-color:#0a0a0a;
-    margin-bottom: 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .banner div {
-    padding-left: 100px;
+.slider {
+  position: relative;
+}
+
+  .slider .text-content {
+    position: absolute;
+    top: 50px;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    color: white;
+    gap: 1rem;
+    justify-content: flex-end;
+    padding: 0 0 10% 10%;
+    z-index: 1;
   }
-  
-  .banner div p {
-    font-size: 1.4rem;
-    color: rgb(32, 59, 196);
+
+  .slider .text-content::before {
+    content: "";
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    width: 450px;
+    height: 300px;
+    background-color: white;
+    z-index: -3;
+    filter: blur(50px);
+    opacity: 0.8;
+  }
+
+  .slider h4 {
+    font-size: 24px;
     font-weight: bold;
-  }
-  .banner div h1 {
-    color: white;
-    font-size: 6.8rem;
-    font-weight: bolder;
-  }
-  
-  
-  .banner-image {
-    padding-top: 150px;
-    padding-right: 100px;
-    width: 700px;
-  }
-  
-  
-  
-  .btn-catagories {
-    margin-top: 20px;
-    background: rgb(32, 59, 196);
-    border-radius: 999px;
-    box-sizing: border-box;
-    color: #FFFFFF;
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 24px;
-    opacity: 1;
-    outline: 0 solid transparent;
-    padding: 8px 18px;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
     width: fit-content;
-    word-break: break-word;
-    border: 0;
+    padding: 4px 10px;
+    background-color: var(--bg-color);
+    color: white;
+    border-radius: 4px;
   }
-  
-  .btn-catagories:hover {
-    opacity: .8;
+
+  .image > img {
+    max-width: 100%;
+    vertical-align: middle;
+  }
+
+  .text-content > h2 {
+    font-size: 36px;
+    color: var(--bg-color);
+  }
+
+  .text-content > .desc {
+    font-weight: 900;
+    font-size: 42px;
+    margin-top: -15px;
+    color: var(--secondary-color);
+  }
+
+  .text-content > .primary-button {
+    font-size: 20px;
+    font-weight: bold;
+    width: fit-content;
+    padding: 10px;
+    text-decoration: none;
+    background-color: rgb(32, 59, 196);
+    color: white;
+    border-radius: 50px;
+  }
+
+  @media screen and (min-width: 992px) {
+    .sliderContainer {
+      padding: 0 2em;
+    }
   }

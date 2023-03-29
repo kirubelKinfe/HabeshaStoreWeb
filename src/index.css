@@ -3,10 +3,10 @@
 :root {
   --font-base: "DM Sans", sans-serif;
 
-  --primary-color: #edf2f8;
-  --secondary-color: #313bac;
-  --black-color: #030303;
-  --lightGray-color: #e4e4e4;
+  --primary-color: #121921;
+  --secondary-color: #232f3f;
+  --bg-color: #0d1017;
+  --text-color: rgb(32, 59, 196);
   --gray-color: #6b7688;
   --brown-color: #46364a;
   --white-color: #ffffff;
@@ -16,11 +16,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: var(--font-base);
   scroll-behavior: smooth;
 }
 
 body {
   min-width: 100vw;
   overflow-x: hidden;
-  background-color: #0a0a0a;;
+  background-color: var(--bg-color)
 }

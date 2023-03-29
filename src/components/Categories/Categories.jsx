@@ -1,35 +1,27 @@
+import { Link } from 'react-router-dom'
 import { images } from '../../constants'
-
+import './Categories.css'
 
 const Categories = () => {
   return (
     <div>
-      <a name="catagories"></a>
-      <div class="catagories">
-        <a name='catagory'></a>
-        <div class="catagories-title">Catagories</div>
-        <div class="catagories-desc">
-          You have got 3 catagories to choose from
-        </div>
-        <div class="catagories-view">
-            <a href="men.php">
-            <div class="catagorie">
-              <img class="thumbnail" src={images.MenImage} alt="" />
-              <div class="men-catagorie">Men's</div>
-            </div>
-            </a>
-            <a href="women.php">
-                <div class="catagorie">
-                    <img class="thumbnail" src={images.WomenImage} alt="" />
-                    <div class="men-catagorie">Women's</div>
-                </div>
-            </a>
-            <a href="electronics.php">
-                <div class="catagorie">
-                    <img class="thumbnail" src={images.ChildrenImage} />
-                    <div class="men-catagorie">Children's</div>
-                </div>
-            </a>
+      <div className="subContainers">
+        <h1 className="titles">Catagories</h1>
+        <h2 className="descriptions">You have got 3 catagories to choose from</h2>
+
+        <div className="catagoriesView">
+            <Link to="/men" className="catagorie">
+              <img src={images.MenImage} alt="catagory" />
+              <div className="catagorieItems">Men's</div>
+            </Link>
+            <Link to="/women" className="catagorie">
+              <img src={images.WomenImage} alt="catagory" />
+              <div className="catagorieItems">Women's</div>
+            </Link>
+            <Link to="/children" className="catagorie">
+              <img src={images.ChildrenImage} alt="catagory" />
+              <div className="catagorieItems">Children's</div>
+            </Link>
         </div>
       </div>
     </div>
