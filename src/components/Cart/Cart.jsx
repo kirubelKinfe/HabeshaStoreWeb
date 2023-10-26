@@ -1,9 +1,8 @@
 import { useDispatch, useSelector } from "react-redux"
-import CartItem  from "./CartItem"
-import { selectItems, selectShowCart, selectTotalPrice, selectTotalQuantity, setShowCart } from "../../features/cartSlice"
+import { selectItems, setShowCart } from "../../features/cartSlice"
 import './Cart.css'
 
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect,useState } from 'react';
 import { AiOutlineLeft, AiOutlineShopping } from 'react-icons/ai';
 import { Link, useNavigate } from "react-router-dom";
 import { decrementCartQuantity, incrementCartQuantity, removeFromCart } from "../../features/cartSlice";
@@ -20,9 +19,9 @@ const Cart = () => {
 
   useEffect(() => {
     setTotalPrice(0)
-    cartItems.map((item) => {
+    cartItems.map((item) => (
       setTotalPrice(prevPrice => prevPrice += item.totalPrice)
-    })
+    ))
   }, [cartItems])
 
   const removeFromCartFun = (id) => {
@@ -89,7 +88,7 @@ const Cart = () => {
         <div className="product-container">
           {cartItems.length >= 1 && cartItems.map((item) => (
             <div className="cart-product" key={item.id}>
-            <img src={item.img} className="cart-product-image" />
+            <img src={item.img} className="cart-product-image" alt="product" />
             <div className="item-desc">
               <div className="flex top">
                 <h5>{item.name}</h5>

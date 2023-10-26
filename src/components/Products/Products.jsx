@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import './Products.css'
 import Product from '../Product/Product'
 import { db } from '../../constants/firebase'

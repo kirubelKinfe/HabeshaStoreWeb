@@ -1,9 +1,10 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 
 import { images } from '../../constants'
 import './Banner.css'
 
 import {Swiper, SwiperSlide} from "swiper/react";
-import { Navigation, Pagination, Scrollbar, A11y, EffectCube } from 'swiper';
+import { Navigation, Pagination, A11y } from 'swiper';
 import 'swiper/swiper-bundle.min.css';
 const Banner = () => {
   return (

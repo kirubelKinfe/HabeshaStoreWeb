@@ -193,7 +193,7 @@ const regions = [
     "Dire Dawa city council"
 ]
 
-export default  {
+export {
     cities,
     regions
 }

@@ -9,7 +9,7 @@ import SliderImage2 from '../assets/images/slider/slider1.jpg'
 import SliderImage3 from '../assets/images/slider/slider2.jpg'
 import SliderImage4 from '../assets/images/slider/slider3.jpg'
 
-export default  {
+export {
     BannerImage,
     MenImage,
     WomenImage,

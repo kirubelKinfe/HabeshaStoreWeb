@@ -35,7 +35,7 @@ const CartItem = ({ item:{ id, name, totalPrice, price, quantity, cartQuantity, 
 
     return (
         <div className="product" key={id}>
-              <img src={img} className="cart-product-image" />
+              <img src={img} className="cart-product-image" alt="product" />
               <div className="item-desc">
                 <div className="flex top">
                   <h5>{name}</h5>

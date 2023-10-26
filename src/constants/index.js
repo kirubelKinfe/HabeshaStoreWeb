@@ -1,4 +1,4 @@
-import images from "./images";
-import arrays from "./arrays";
+import * as images from "./images";
+import * as arrays from "./arrays";
 
 export { images, arrays };

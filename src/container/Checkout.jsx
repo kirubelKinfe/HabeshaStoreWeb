@@ -11,9 +11,9 @@ const Checkout = () => {
 
   useEffect(() => {
     setTotalPrice(0)
-    cartItems.map((item) => {
+    cartItems.map((item) => (
       setTotalPrice(prevPrice => prevPrice += item.totalPrice)
-    })
+    ))
   }, [cartItems])
 
   return (

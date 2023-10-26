@@ -6,7 +6,7 @@ const OrderSummary = ({cartItems, totalPrice}) => {
           <h1>Orders Summary</h1>
           {cartItems.length >= 1 && cartItems.map((item) => (
                 <div className="checkout-product" key={item.id}>
-                  <img src={item.img} className="checkout-product-image" />
+                  <img src={item.img} className="checkout-product-image" alt="product" />
                   <div className="checkout-item-desc">
                       <h5>{item.name}</h5>
                       <h4>x{item.quantity}</h4>

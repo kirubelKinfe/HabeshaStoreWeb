@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 
 import Product from '../components/Product/Product'
 import { db } from '../constants/firebase'
@@ -27,6 +28,7 @@ const Men = () => {
                 if(product.category === 'Men') {
                     return <Product key={product.storageKey} product={product} />
                 }
+                return null
             })}
         </div>
     </div>

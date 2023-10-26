@@ -1,6 +1,6 @@
 import './Product.css'
-import { useDispatch, useSelector } from "react-redux"
-import { addToCart, selectItems } from "../../features/cartSlice";
+import { useDispatch } from "react-redux"
+import { addToCart } from "../../features/cartSlice";
 
 
 const Product = ({ 
@@ -8,7 +8,7 @@ const Product = ({
   }) => {
   
   const dispatch = useDispatch();
-  const cartItems = useSelector(selectItems)
+  // const cartItems = useSelector(selectItems)
  
 
   const addToCartFun = () => {

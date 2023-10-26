@@ -25,7 +25,7 @@ const cartSlice = createSlice({
                     name: newItem.name
                 })
                 localStorage.setItem("cartItems", JSON.stringify(state.itemsList))
-                //toast.success(`${newItem.name} added to the cart.`)
+                toast.success(`${newItem.name} added to the cart.`)
             }
         },
         removeFromCart(state, action) {
