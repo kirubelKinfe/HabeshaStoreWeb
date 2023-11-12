@@ -1,4 +1,4 @@
-import './App.css'
+import './App.scss'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import Home from './container/Home';
 import Login from './container/Login';
@@ -6,7 +6,6 @@ import { Navbar } from './components';
 import Children from './container/Children';
 import Women from './container/Women';
 import Men from './container/Men';
-import { ToastContainer } from 'react-toastify';
 import Checkout from './container/Checkout';
 
 function App() {
@@ -14,7 +13,6 @@ function App() {
   return (
     <div>
       <Router>
-        <ToastContainer />
           <Navbar />
           <Routes>
             <Route path='/' element={<Home />} />

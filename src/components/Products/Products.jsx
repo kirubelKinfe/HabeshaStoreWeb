@@ -1,5 +1,5 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import './Products.css'
+import './Products.scss'
 import Product from '../Product/Product'
 import { db } from '../../constants/firebase'
 import { getDocs, collection } from 'firebase/firestore'

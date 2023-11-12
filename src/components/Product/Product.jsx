@@ -1,4 +1,4 @@
-import './Product.css'
+import './Product.scss'
 import { useDispatch } from "react-redux"
 import { addToCart } from "../../features/cartSlice";
 

@@ -1,4 +1,4 @@
-import './Login.css'
+import './Login.scss'
 import { auth, userRef } from '../constants/firebase';
 import { GoogleAuthProvider, onAuthStateChanged, signInWithPopup } from 'firebase/auth';
 import { useNavigate } from 'react-router-dom';

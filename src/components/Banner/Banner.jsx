@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 
 import { images } from '../../constants'
-import './Banner.css'
+import './Banner.scss'
 
 import {Swiper, SwiperSlide} from "swiper/react";
 import { Navigation, Pagination, A11y } from 'swiper';

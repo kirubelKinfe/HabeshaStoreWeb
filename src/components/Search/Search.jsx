@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import './Search.css'
+import './Search.scss'
 
 const Search = () => {
     const [searchField, setSearchField] = useState('');

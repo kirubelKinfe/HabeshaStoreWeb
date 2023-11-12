@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import CartImage from '../../assets/images/cart.png'
-import './Navbar.css'
+import './Navbar.scss'
 import { auth } from '../../constants/firebase'
 import { useNavigate } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'

@@ -1,6 +1,6 @@
 import { useDispatch, useSelector } from "react-redux"
 import { selectItems, setShowCart } from "../../features/cartSlice"
-import './Cart.css'
+import './Cart.scss'
 
 import React, { useEffect,useState } from 'react';
 import { AiOutlineLeft, AiOutlineShopping } from 'react-icons/ai';

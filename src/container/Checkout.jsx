@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { useSelector } from 'react-redux'
 import { selectItems } from '../features/cartSlice'
-import './Checkout.css'
+import './Checkout.scss'
 import OrderSummary from '../components/CheckoutComponents/OrderSummary'
 import FormContainer from '../components/CheckoutComponents/FormComponents/FormContainer'
 

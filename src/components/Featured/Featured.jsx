@@ -1,5 +1,5 @@
 import { images } from '../../constants'
-import './Featured.css'
+import './Featured.scss'
 
 
 const Featured = () => {
