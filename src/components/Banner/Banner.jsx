@@ -8,41 +8,6 @@ import { Navigation, Pagination, A11y } from 'swiper';
 import 'swiper/swiper-bundle.min.css';
 const Banner = () => {
   return (
-    // <div>
-    //   {/* <div className="banner">
-    //       <div>
-    //           <p>Welcome to Habesha Store</p>
-    //           <h1>Shopping Time</h1>
-    //           <h3>Ontime Delivery</h3>
-    //           <button className="btnCatagories" type="button">Check Catagories</button>
-    //       </div>
-    //       <img className="bannerImage" src={images.BannerImage} alt="banner" />
-    //   </div> */}
-    //   <div className="slider">
-    //     <div className="sliderContainer">
-    //       <div className="wrapper">
-    //         <div className="myslider">
-    //           <div className="wrapper">
-    //             <div className="slide">
-    //               <div className="item">
-    //                 <div className="image object-cover">
-    //                   <img src={images.SliderImage1} alt="" />
-    //                 </div>
-    //                 <div className="text-content">
-    //                   <h4>Shoes Fashion</h4>
-    //                   <h2>Come and Get It!</h2>
-    //                   <h2>Brand New Shoes</h2>
-    //                   <a href="#" className='primary-button'>Shop Now</a>
-    //                 </div>
-    //               </div>
-    //             </div>
-    //           </div>
-    //         </div>
-    //       </div>
-    //     </div>
-    //   </div>
-
-    // </div>
     <div
       style={{
         width: "100%",

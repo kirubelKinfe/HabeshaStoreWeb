@@ -5,8 +5,8 @@ import './Featured.scss'
 const Featured = () => {
   return (
     <div className='subContainers'>
-        <div className='titles'>Featured Product</div>
-        <div className='descriptions'>This is the best product of this year</div>
+        <h2 className='titles'>Featured Product</h2>
+        <p className='descriptions'>This is the best product of this year</p>
         
         <div className='featuredProduct'>
             <div className='productTitle'>Nike Shoe</div>

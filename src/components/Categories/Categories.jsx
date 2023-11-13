@@ -6,8 +6,8 @@ const Categories = () => {
   return (
     <div>
       <div className="subContainers">
-        <h1 className="titles">Catagories</h1>
-        <h2 className="descriptions">You have got 3 catagories to choose from</h2>
+        <h2 className="titles">Catagories</h2>
+        <p className="descriptions">Choose from the most popular categories</p>
 
         <div className="catagoriesView">
             <Link to="/men" className="catagorie">
