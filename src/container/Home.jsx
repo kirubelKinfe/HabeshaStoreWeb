@@ -2,7 +2,7 @@ import { Banner, Featured, Products, Categories } from "../components"
 
 const Home = () => {
   return (
-    <div>
+    <div className="">
       <Banner />
       <Featured />
       <Products />

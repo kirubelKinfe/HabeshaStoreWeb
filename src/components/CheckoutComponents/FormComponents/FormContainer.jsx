@@ -29,7 +29,7 @@ const FormContainer = () => {
       {
         formik => (
           <Form className='shipping_address'>
-            <h1>Enter shipping address</h1>
+            <h1 className='text-2xl text-blue-500'>Enter shipping address</h1>
             <FormControl control='input'type='text' label='Name' name='name' />
             <FormControl control='input'type='text' label='PhoneNumber' name='phoneNumber' />
             <FormControl control='select'type='Select a region' options={arrays.regions.sort()} label='Region' name='region' />

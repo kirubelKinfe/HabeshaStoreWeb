@@ -17,12 +17,12 @@ const Checkout = () => {
   }, [cartItems])
 
   return (
-    <div className='checkout_wrapper'>
-      <p className="checkout_heading">
-          <span className="heading">Checkout</span>
-          <span className="checkout_num_items">({cartItems.length} items)</span>
+    <div className='w-full mt-28 flex flex-col justify-center transition-all'>
+      <p className="flex self-center items-center gap-1 ml-3">
+          <span className="ml-3 font-semibold text-2xl">Checkout</span>
+          <span className="ml-3">({cartItems.length} items)</span>
       </p>
-      <div className='checkout_container'>
+      <div className='w-full flex items-center justify-center gap-12'>
         <FormContainer />
         <OrderSummary cartItems={cartItems} totalPrice={totalPrice} />
       </div>
